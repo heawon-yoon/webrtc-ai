@@ -1,0 +1,16 @@
+aiohttp~=3.9.5
+aiohttp-cors
+aiortc~=1.8.0
+librosa~=0.10.2
+transformers~=4.40.1
+torch~=2.3.0
+torchaudio~=2.3.0
+numpy~=1.26.4
+scipy~=1.13.0
+av~=11.0.0
+webrtcvad
+langchain-core
+langchain-community
+langchain_openai
+Pillow
+
