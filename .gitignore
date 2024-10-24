@@ -2,20 +2,20 @@
 
 # dependencies
 /tmp/
-/unpackage/
+**/unpackage/
 /.pnp
 .pnp.js
 .idea
 
 # testing
-/coverage
+**/coverage
 
 # next.js
-/.next/
-/out/
+**/.next/
+**/out/
 
 # production
-/build
+**/build
 
 # misc
 .DS_Store
@@ -28,8 +28,8 @@ yarn-error.log*
 
 # local env files
 .env*.local
-/frontend/.env*
-/backend/.env*
+/frontend/.env
+/backend/.env
 
 # vercel
 .vercel
@@ -40,8 +40,8 @@ yarn-error.log*
 *.xlsx
 *.zip
 
-/.venv/
-/*.wav
-/.idea/
-/__pycache__/
-/.DS_Store
+**/.venv/
+**/*.wav
+**/.idea/
+**/__pycache__/
+**/.DS_Store
