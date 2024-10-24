@@ -1,26 +1,26 @@
 [**English**](./README.md) | [**中文简体**](./README_zh.md)
 
-# WEBRTC REAL_TIME AI
+# WEBRTC 实时音视频AI通话
 
-MS delays webrtc audio and video real-time AI calls.
-End-to-end local model
+毫秒级延迟webrtc音视频实时AI通话.
+端到端本地模型
 
-#### Skills
+#### 技术特点
 
 
-1. Langchain technology supports Openai,ollama and other common large model interfaces
+1. langchain技术支持Openai,ollama等常用大模型接口
 
-2. Webrtc underlying millisecond latency,Native webrtc technology, easy to expand and integrate
+2. webrtc底层毫秒级延迟,原生webrtc技术,易扩展跟集成
 
-3. SST,TTS audio recognition and synthesis using local models,Streaming synthesis
+3. SST,TTS音频识别跟合成使用本地模型,流式合成
 
-4. Vad double check noise reduction and audio monitoring
+4. vad双重校验降噪及音频监听
 
-5. Supportive interruption
+5. 支持说话打断
 
-6. Supports video frame understanding dialog
+6. 支持视频帧理解对话
 
-7. Support h5, mini program, apps with uniapp
+7. 使用uniapp支持h5,小程序,app
 
 
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 python server.py
 ```
 #### NOTE 
-need to set the openai key and url from .evn file
+打开.env文件配置openai key跟url
 <br/>如果没有官方的可以使用这个代理.
   没有访问限制,超级优惠,2人民币=1美元
 https://api.xingyuntujiao.top 申请获取api_key
@@ -64,5 +64,5 @@ npm install
 
 
 
-## DEMO VIEDEO
+## 演示视频
 demos on [bilibili](https://www.bilibili.com/video/BV1wG41197K4/)   [bilibili](https://www.bilibili.com/video/BV1bN41137UA/?vd_source=5afbd824d0483e6ab60779ed3faa4535)
