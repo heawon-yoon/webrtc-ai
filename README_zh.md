@@ -64,4 +64,4 @@ npm install
 
 
 ## 演示视频
-demos on [bilibili](https://www.bilibili.com/video/BV1fjy6Y8ECM)   [youtube](https://www.bilibili.com/video/BV1bN41137UA/?vd_source=5afbd824d0483e6ab60779ed3faa4535)
+demos on [bilibili](https://www.bilibili.com/video/BV1fjy6Y8ECM)   [youtube](https://youtu.be/4-svny5UPqg)
