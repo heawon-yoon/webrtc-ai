@@ -1,0 +1,37 @@
+{
+  "hash": "be04c613",
+  "configHash": "d76be496",
+  "lockfileHash": "edbbaae5",
+  "browserHash": "a7ccd227",
+  "optimized": {
+    "markdown-it": {
+      "src": "../../../../../node_modules/markdown-it/index.mjs",
+      "file": "markdown-it.js",
+      "fileHash": "96341d9b",
+      "needsInterop": false
+    },
+    "highlight.js": {
+      "src": "../../../../../node_modules/highlight.js/es/index.js",
+      "file": "highlight__js.js",
+      "fileHash": "99370775",
+      "needsInterop": false
+    },
+    "markdown-it-latex2img": {
+      "src": "../../../../../node_modules/markdown-it-latex2img/index.js",
+      "file": "markdown-it-latex2img.js",
+      "fileHash": "87055e3c",
+      "needsInterop": true
+    },
+    "markdown-it-mathjax": {
+      "src": "../../../../../node_modules/markdown-it-mathjax/markdown-it-mathjax.js",
+      "file": "markdown-it-mathjax.js",
+      "fileHash": "a1b39262",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-ZS7NZCD4": {
+      "file": "chunk-ZS7NZCD4.js"
+    }
+  }
+}

@@ -181,6 +181,14 @@ const activeCam = ref(false)
 
 
 
+onUnmounted(async () => {
+	console.log("onUnmounted")
+	state.stream.getTracks().forEach((track) =>{
+				track.stop()
+	})
+ 
+})
+
 const scroll = (e) => {
 	console.log("scroll",e)
 }
