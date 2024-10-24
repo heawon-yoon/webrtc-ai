@@ -1,0 +1,33 @@
+{
+    "id": "ua-markdown",
+    "name": "uniapp markdown语法渲染及代码高亮",
+    "displayName": "uniapp markdown语法渲染及代码高亮",
+    "version": "1.2.4",
+    "description": "基于uniapp+vue3自定义解析markdown语法/高亮，适用于h5+小程序+App端。",
+    "scripts": {
+       "postinstall": "weapp-tw patch"
+     },
+
+	"keywords": [
+        "ua-markdown",
+        "uni-markdown",
+        "markdown"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    },
+    "dependencies": {
+        "highlight.js": "^11.10.0",
+        "livekit-client": "^2.5.1",
+        "markdown-it": "^14.1.0",
+        "markdown-it-latex2img": "^0.0.6",
+        "markdown-it-mathjax": "^2.0.0"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.13",
+        "weapp-tailwindcss": "^3.5.3"
+    }
+}
