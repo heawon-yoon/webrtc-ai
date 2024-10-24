@@ -42,9 +42,8 @@ python server.py
 ```
 #### NOTE 
 need to set the openai key and url from .evn file
-<br/>如果没有官方的可以使用这个代理.
+<br/>如果没有官方的可以使用这个代理[openai](https://api.xingyuntujiao.top) 申请获取api_key
   没有访问限制,超级优惠,2人民币=1美元
-https://api.xingyuntujiao.top 申请获取api_key
 ```
 OPENAI_API_BASE=https://api.xingyuntujiao.top/v1
 OPENAI_API_KEY=XXXX
