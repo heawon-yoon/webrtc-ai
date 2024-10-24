@@ -1,7 +1,7 @@
 from asyncio import Task
 import copy
 import uuid
-
+import sys
 import librosa
 import numpy as np
 from aiortc import RTCPeerConnection, RTCDataChannel, MediaStreamTrack
@@ -25,7 +25,6 @@ class State:
     response_player: PlaybackStreamTrack = PlaybackStreamTrack()
     video_frame = None
 
-    logger = logging.getLogger("pc")
 
     def __init__(self):
         self.pc = RTCPeerConnection()
@@ -36,11 +35,16 @@ class State:
         self.vad.set_mode(3)  # 设置 VAD 模式
         self.silence_frames = 0  # 初始化静音帧数
         self.sample_rate = 16000
-        self.logger = logging.getLogger("pc")
+        log_console = logging.StreamHandler(sys.stderr)
+
+        default_logger = logging.getLogger(__name__)
+        default_logger.setLevel(logging.DEBUG)
+        default_logger.addHandler(log_console)
+        self.logger = default_logger
+
 
     def log_info(self, msg, *args):
-        print("log_info",msg,*args)
-        self.logger.info(self.id + " " + msg, *args)
+        self.logger.info(self.id+" "+msg,*args)
 
     def append_frame(self, frame: AudioFrame):
         #print("append_frame")

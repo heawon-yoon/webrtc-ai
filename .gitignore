@@ -28,9 +28,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
 /frontend/.env
-/backend/.env
+**.env*
 
 # vercel
 .vercel
@@ -48,3 +47,4 @@ yarn-error.log*
 **/.DS_Store
 output_image.jpg
 
+/backend/.env

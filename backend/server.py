@@ -3,6 +3,7 @@ import asyncio
 import json
 import logging
 import os
+import sys
 import ssl
 import threading
 from asyncio import create_task, AbstractEventLoop
@@ -22,7 +23,12 @@ from speech.tts import TTS
 from speech.funstt import FUN_STT
 from speech.edgs_tts import EDGS_TTS
 import openai
-logger = logging.getLogger("pc")
+
+log_console = logging.StreamHandler(sys.stderr)
+default_logger = logging.getLogger(__name__)
+default_logger.setLevel(logging.DEBUG)
+default_logger.addHandler(log_console)
+
 ROOT = os.path.dirname(__file__)
 
 from dotenv import load_dotenv
@@ -122,8 +128,7 @@ async def offer(request):
 
     @state.pc.on("track")
     async def on_track(track: MediaStreamTrack):
-        print("Track received",track.kind)
-        state.log_info("Track %s received", track.kind)
+        default_logger.info("Track %s received", track.kind)
 
         if track.kind == "audio":
             state.log_info("Received %s", track.kind)
@@ -137,7 +142,6 @@ async def offer(request):
 
         @track.on("ended")
         async def on_ended():
-            print("Track %s ended", track.kind)
             state.task.cancel()
             state.video_task.cancel()
             track.stop()
@@ -147,7 +151,6 @@ async def offer(request):
 
     # send answer
     answer = await state.pc.createAnswer()
-    print("answer", answer)
     await asyncio.sleep(0)
     await state.pc.setLocalDescription(answer)
 
@@ -358,7 +361,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    logging.basicConfig(level=logging.DEBUG)
 
     chain = Chain()
 
